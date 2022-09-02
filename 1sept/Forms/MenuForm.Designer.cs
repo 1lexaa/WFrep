@@ -30,6 +30,7 @@
         {
             this.linkLabel1sept = new System.Windows.Forms.LinkLabel();
             this.linkLabel2sept = new System.Windows.Forms.LinkLabel();
+            this.prac2sept = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // linkLabel1sept
@@ -54,11 +55,23 @@
             this.linkLabel2sept.Text = "2 sept";
             this.linkLabel2sept.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2sept_LinkClicked);
             // 
+            // prac2sept
+            // 
+            this.prac2sept.AutoSize = true;
+            this.prac2sept.Location = new System.Drawing.Point(73, 260);
+            this.prac2sept.Name = "prac2sept";
+            this.prac2sept.Size = new System.Drawing.Size(151, 32);
+            this.prac2sept.TabIndex = 2;
+            this.prac2sept.TabStop = true;
+            this.prac2sept.Text = "2 prac 2 sept";
+            this.prac2sept.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.prac2sept_LinkClicked);
+            // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1428, 864);
+            this.Controls.Add(this.prac2sept);
             this.Controls.Add(this.linkLabel2sept);
             this.Controls.Add(this.linkLabel1sept);
             this.Name = "MenuForm";
@@ -72,5 +85,6 @@
 
         private LinkLabel linkLabel1sept;
         private LinkLabel linkLabel2sept;
+        private LinkLabel prac2sept;
     }
 }

@@ -20,8 +20,7 @@ namespace _1sept.Forms
         int X = 0;
         int Y = 0;
 
-        int XClick = 0;
-        int YClick = 0;
+        
 
         private void Form2sept_KeyDown(object sender, KeyEventArgs e)
         {
