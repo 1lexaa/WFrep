@@ -1,3 +1,5 @@
+using _1sept.Forms;
+
 namespace _1sept
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace _1sept
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new MenuForm());
         }
     }
 }
