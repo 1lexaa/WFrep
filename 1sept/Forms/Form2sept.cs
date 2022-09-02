@@ -52,6 +52,32 @@ namespace _1sept.Forms
                     this.Location = newLocation.Value;
                 }
             }
+
+            if (e.KeyCode == Keys.W)
+            {
+                newLocation = new Point(this.Location.X, this.Location.Y - 50);
+            }
+            else if (e.KeyCode == Keys.S)
+            {
+                newLocation = new Point(this.Location.X, this.Location.Y + 50);
+            }
+            else if (e.KeyCode == Keys.A)
+            {
+                newLocation = new Point(this.Location.X - 50, this.Location.Y);
+            }
+            else if (e.KeyCode == Keys.D)
+            {
+                newLocation = new Point(this.Location.X + 50, this.Location.Y);
+            }
+            if (newLocation != null)
+            {
+                if (Screen.PrimaryScreen.Bounds.Contains(new Rectangle(newLocation.Value, this.Size)))
+                {
+                    this.Location = newLocation.Value;
+                }
+            }
+
+
         }
     }
 }
