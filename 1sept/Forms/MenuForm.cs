@@ -37,5 +37,12 @@ namespace _1sept.Forms
             new Timer2sept().ShowDialog();
             this.Show();
         }
+
+        private void linkarr2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            new Form2arr().ShowDialog();
+            this.Show();
+        }
     }
 }

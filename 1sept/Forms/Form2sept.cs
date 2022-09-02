@@ -21,8 +21,7 @@ namespace _1sept.Forms
         int Y = 0;
 
         
-
-        private void Form2sept_KeyDown(object sender, KeyEventArgs e)
+            private void Form2sept_KeyDown(object sender, KeyEventArgs e)
         {
             this.Text += (char)e.KeyValue;
 
