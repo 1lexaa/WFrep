@@ -32,6 +32,8 @@
             this.linkLabel2sept = new System.Windows.Forms.LinkLabel();
             this.prac2sept = new System.Windows.Forms.LinkLabel();
             this.linkarr2 = new System.Windows.Forms.LinkLabel();
+            this.prac0909 = new System.Windows.Forms.LinkLabel();
+            this.linktimer = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // linkLabel1sept
@@ -78,11 +80,35 @@
             this.linkarr2.Text = "arr 2";
             this.linkarr2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkarr2_LinkClicked);
             // 
+            // prac0909
+            // 
+            this.prac0909.AutoSize = true;
+            this.prac0909.Location = new System.Drawing.Point(97, 458);
+            this.prac0909.Name = "prac0909";
+            this.prac0909.Size = new System.Drawing.Size(138, 32);
+            this.prac0909.TabIndex = 4;
+            this.prac0909.TabStop = true;
+            this.prac0909.Text = "Richtextbox";
+            this.prac0909.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.prac0909_LinkClicked);
+            // 
+            // linktimer
+            // 
+            this.linktimer.AutoSize = true;
+            this.linktimer.Location = new System.Drawing.Point(105, 546);
+            this.linktimer.Name = "linktimer";
+            this.linktimer.Size = new System.Drawing.Size(99, 32);
+            this.linktimer.TabIndex = 5;
+            this.linktimer.TabStop = true;
+            this.linktimer.Text = "w Timer";
+            this.linktimer.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linktimer_LinkClicked);
+            // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1428, 864);
+            this.Controls.Add(this.linktimer);
+            this.Controls.Add(this.prac0909);
             this.Controls.Add(this.linkarr2);
             this.Controls.Add(this.prac2sept);
             this.Controls.Add(this.linkLabel2sept);
@@ -100,5 +126,7 @@
         private LinkLabel linkLabel2sept;
         private LinkLabel prac2sept;
         private LinkLabel linkarr2;
+        private LinkLabel prac0909;
+        private LinkLabel linktimer;
     }
 }

@@ -44,5 +44,19 @@ namespace _1sept.Forms
             new Form2arr().ShowDialog();
             this.Show();
         }
+
+        private void prac0909_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            new prac0909cs().ShowDialog();
+            this.Show();
+        }
+
+        private void linktimer_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            new Timer().ShowDialog();
+            this.Show();
+        }
     }
 }
