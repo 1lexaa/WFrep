@@ -60,5 +60,12 @@ namespace _1sept.Forms
             new WallpaperChanger().ShowDialog();
             this.Show();
         }
+
+        private void linkLabel_IM_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            new InfMenu().ShowDialog();
+            this.Show();
+        }
     }
 }

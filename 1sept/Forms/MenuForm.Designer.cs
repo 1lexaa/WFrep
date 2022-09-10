@@ -34,6 +34,7 @@
             this.linkarr2 = new System.Windows.Forms.LinkLabel();
             this.linktimer = new System.Windows.Forms.LinkLabel();
             this.linkCH = new System.Windows.Forms.LinkLabel();
+            this.linkLabel_IM = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // linkLabel1sept
@@ -102,11 +103,23 @@
             this.linkCH.Text = "Change Wallpaper";
             this.linkCH.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkCH_LinkClicked);
             // 
+            // linkLabel_IM
+            // 
+            this.linkLabel_IM.AutoSize = true;
+            this.linkLabel_IM.Location = new System.Drawing.Point(123, 634);
+            this.linkLabel_IM.Name = "linkLabel_IM";
+            this.linkLabel_IM.Size = new System.Drawing.Size(157, 32);
+            this.linkLabel_IM.TabIndex = 7;
+            this.linkLabel_IM.TabStop = true;
+            this.linkLabel_IM.Text = "Infinity menu";
+            this.linkLabel_IM.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_IM_LinkClicked);
+            // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1428, 864);
+            this.Controls.Add(this.linkLabel_IM);
             this.Controls.Add(this.linkCH);
             this.Controls.Add(this.linktimer);
             this.Controls.Add(this.linkarr2);
@@ -128,5 +141,6 @@
         private LinkLabel linkarr2;
         private LinkLabel linktimer;
         private LinkLabel linkCH;
+        private LinkLabel linkLabel_IM;
     }
 }
