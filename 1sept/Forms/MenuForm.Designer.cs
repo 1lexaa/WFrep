@@ -35,6 +35,9 @@
             this.linktimer = new System.Windows.Forms.LinkLabel();
             this.linkCH = new System.Windows.Forms.LinkLabel();
             this.linkLabel_IM = new System.Windows.Forms.LinkLabel();
+            this.linkLabellistview = new System.Windows.Forms.LinkLabel();
+            this.linkLabellistik = new System.Windows.Forms.LinkLabel();
+            this.linkLabelcultinfo = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // linkLabel1sept
@@ -51,7 +54,7 @@
             // linkLabel2sept
             // 
             this.linkLabel2sept.AutoSize = true;
-            this.linkLabel2sept.Location = new System.Drawing.Point(85, 172);
+            this.linkLabel2sept.Location = new System.Drawing.Point(203, 68);
             this.linkLabel2sept.Name = "linkLabel2sept";
             this.linkLabel2sept.Size = new System.Drawing.Size(79, 32);
             this.linkLabel2sept.TabIndex = 1;
@@ -62,7 +65,7 @@
             // prac2sept
             // 
             this.prac2sept.AutoSize = true;
-            this.prac2sept.Location = new System.Drawing.Point(73, 260);
+            this.prac2sept.Location = new System.Drawing.Point(349, 68);
             this.prac2sept.Name = "prac2sept";
             this.prac2sept.Size = new System.Drawing.Size(151, 32);
             this.prac2sept.TabIndex = 2;
@@ -73,7 +76,7 @@
             // linkarr2
             // 
             this.linkarr2.AutoSize = true;
-            this.linkarr2.Location = new System.Drawing.Point(113, 366);
+            this.linkarr2.Location = new System.Drawing.Point(569, 68);
             this.linkarr2.Name = "linkarr2";
             this.linkarr2.Size = new System.Drawing.Size(62, 32);
             this.linkarr2.TabIndex = 3;
@@ -84,7 +87,7 @@
             // linktimer
             // 
             this.linktimer.AutoSize = true;
-            this.linktimer.Location = new System.Drawing.Point(85, 454);
+            this.linktimer.Location = new System.Drawing.Point(73, 154);
             this.linktimer.Name = "linktimer";
             this.linktimer.Size = new System.Drawing.Size(99, 32);
             this.linktimer.TabIndex = 5;
@@ -95,7 +98,7 @@
             // linkCH
             // 
             this.linkCH.AutoSize = true;
-            this.linkCH.Location = new System.Drawing.Point(73, 538);
+            this.linkCH.Location = new System.Drawing.Point(219, 154);
             this.linkCH.Name = "linkCH";
             this.linkCH.Size = new System.Drawing.Size(209, 32);
             this.linkCH.TabIndex = 6;
@@ -106,7 +109,7 @@
             // linkLabel_IM
             // 
             this.linkLabel_IM.AutoSize = true;
-            this.linkLabel_IM.Location = new System.Drawing.Point(123, 634);
+            this.linkLabel_IM.Location = new System.Drawing.Point(493, 154);
             this.linkLabel_IM.Name = "linkLabel_IM";
             this.linkLabel_IM.Size = new System.Drawing.Size(157, 32);
             this.linkLabel_IM.TabIndex = 7;
@@ -114,11 +117,47 @@
             this.linkLabel_IM.Text = "Infinity menu";
             this.linkLabel_IM.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_IM_LinkClicked);
             // 
+            // linkLabellistview
+            // 
+            this.linkLabellistview.AutoSize = true;
+            this.linkLabellistview.Location = new System.Drawing.Point(73, 256);
+            this.linkLabellistview.Name = "linkLabellistview";
+            this.linkLabellistview.Size = new System.Drawing.Size(46, 32);
+            this.linkLabellistview.TabIndex = 8;
+            this.linkLabellistview.TabStop = true;
+            this.linkLabellistview.Text = "GG";
+            this.linkLabellistview.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabellistview_LinkClicked);
+            // 
+            // linkLabellistik
+            // 
+            this.linkLabellistik.AutoSize = true;
+            this.linkLabellistik.Location = new System.Drawing.Point(185, 256);
+            this.linkLabellistik.Name = "linkLabellistik";
+            this.linkLabellistik.Size = new System.Drawing.Size(62, 32);
+            this.linkLabellistik.TabIndex = 9;
+            this.linkLabellistik.TabStop = true;
+            this.linkLabellistik.Text = "listik";
+            this.linkLabellistik.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabellistik_LinkClicked);
+            // 
+            // linkLabelcultinfo
+            // 
+            this.linkLabelcultinfo.AutoSize = true;
+            this.linkLabelcultinfo.Location = new System.Drawing.Point(85, 356);
+            this.linkLabelcultinfo.Name = "linkLabelcultinfo";
+            this.linkLabelcultinfo.Size = new System.Drawing.Size(67, 32);
+            this.linkLabelcultinfo.TabIndex = 10;
+            this.linkLabelcultinfo.TabStop = true;
+            this.linkLabelcultinfo.Text = "Time";
+            this.linkLabelcultinfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelcultinfo_LinkClicked);
+            // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1428, 864);
+            this.Controls.Add(this.linkLabelcultinfo);
+            this.Controls.Add(this.linkLabellistik);
+            this.Controls.Add(this.linkLabellistview);
             this.Controls.Add(this.linkLabel_IM);
             this.Controls.Add(this.linkCH);
             this.Controls.Add(this.linktimer);
@@ -142,5 +181,8 @@
         private LinkLabel linktimer;
         private LinkLabel linkCH;
         private LinkLabel linkLabel_IM;
+        private LinkLabel linkLabellistview;
+        private LinkLabel linkLabellistik;
+        private LinkLabel linkLabelcultinfo;
     }
 }

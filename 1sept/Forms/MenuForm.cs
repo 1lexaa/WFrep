@@ -67,5 +67,26 @@ namespace _1sept.Forms
             new InfMenu().ShowDialog();
             this.Show();
         }
+
+        private void linkLabellistview_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            new ViewList().ShowDialog();
+            this.Show();
+        }
+
+        private void linkLabellistik_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            new Listikview().ShowDialog();
+            this.Show();
+        }
+
+        private void linkLabelcultinfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            new CultInfo().ShowDialog();
+            this.Show();
+        }
     }
 }
