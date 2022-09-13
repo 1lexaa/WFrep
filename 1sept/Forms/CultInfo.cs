@@ -29,10 +29,10 @@ namespace _1sept.Forms
         {
             listBox1.Items.Clear();
            
-            CultureInfo tokyoCulture = new CultureInfo("fr-FR");
+            CultureInfo tokyoCulture = new CultureInfo("ja-JP");
             DateTimeFormatInfo dtfi = tokyoCulture.DateTimeFormat;
             dtfi.TimeSeparator = ":";
-            listBox1.Items.Add($"France: {dt.ToString("t", dtfi)}");
+            listBox1.Items.Add($"Tokyo: {dt.ToString("t", dtfi)}");
             
             listBox1.Items.Add($"New York: {TimeZoneInfo.ConvertTimeBySystemTimeZoneId(dt, TimeZoneInfo.Local.Id, "Eastern Standard Time")}");
             
