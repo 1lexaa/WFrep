@@ -28,7 +28,7 @@ namespace _1sept.Forms
         private void timer1_Tick(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-           
+           //
             CultureInfo tokyoCulture = new CultureInfo("ja-JP");
             DateTimeFormatInfo dtfi = tokyoCulture.DateTimeFormat;
             dtfi.TimeSeparator = ":";
